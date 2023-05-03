@@ -8,7 +8,11 @@ export default function MovieDetail() {
 	const [link,setLnk]=useState();
 	// fetch linkYoutube
 	useEffect(()=>{
-		fetch(BASE_URL+`/movie/${id}/videos?api_key=${API_KEY}`).then(res=>res.json()).then(respone=>{const result=respone.results;setLnk(result[0].key);})
+		fetch(BASE_URL+`/movie/${id}/videos?api_key=${API_KEY}`).then(res=>res.json()).then(respone=>{
+			const result=respone.results;
+			console.log(result); 
+			setLnk(result[0].key);
+		})
 		fetch(BASE_URL+`/movie/${id}?api_key=${API_KEY}`).then(res=>res.json()).then(respone=>{setData(respone)})
 	},[id])
 	const [isOpen, setIsOpen] = useState(false);
