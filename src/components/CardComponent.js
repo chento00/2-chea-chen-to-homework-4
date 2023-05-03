@@ -7,9 +7,9 @@ export default function CardComponent({title,description,url,img,id }) {
 	}
 	return (
 		<>
-			<div onClick={handleClick} class="hover:pointer-events-auto m-5 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+			<div onClick={handleClick} class="hover:pointer-events-auto m-2 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 				<a href="#">
-					<img  class="rounded-t-lg h-72 w-full" src={img?img:"https://media.istockphoto.com/id/931643150/vector/picture-icon.jpg?s=612x612&w=0&k=20&c=St-gpRn58eIa8EDAHpn_yO4CZZAnGD6wKpln9l3Z3Ok="} alt="" />
+					<img  class="rounded-t-lg h-60 w-full" src={img?img:"https://media.istockphoto.com/id/931643150/vector/picture-icon.jpg?s=612x612&w=0&k=20&c=St-gpRn58eIa8EDAHpn_yO4CZZAnGD6wKpln9l3Z3Ok="} alt="" />
 				</a>
 				<div class="p-5">
 					<a href="#">

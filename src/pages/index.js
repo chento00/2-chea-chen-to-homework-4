@@ -10,7 +10,7 @@ export default function Home({movies}) {
   const data=movies?.results ||[];
   return (
     <>
-      <div className='grid  grid-cols-5 w-3/4 m-auto '>
+      <div className='grid grid-cols-6 w-3/4 m-auto '>
         {
           data.length > 0 && data.map((item,index)=>(
             <
